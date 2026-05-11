@@ -1,0 +1,13 @@
+.back-image {
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.back-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

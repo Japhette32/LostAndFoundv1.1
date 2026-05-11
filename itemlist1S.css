@@ -1,0 +1,552 @@
+body {
+    background:#f5f3d8;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    margin: 0; /* Remove any default margin */    
+    }
+
+    .Empty {
+        color: #e2c100;
+        background-color: #1a2a5c;
+        font-size: 2rem;
+        padding: 1.1%;
+        text-align: center;
+        border-radius: 50px; /* Make it a cylinder shape */
+        height: 100px; /* Set a fixed height */
+        display: flex;
+        justify-content: center; /* Align text horizontally */
+        align-items: center; /* Align text vertically */
+        margin: 0 auto; /* Center the element horizontally */
+        position: relative;
+        top: 50%; /* Position it vertically in the middle */
+        transform: translateY(-50%); /* Adjust to ensure it's exactly in the center */
+    }
+    
+     /* Header Styles */
+     .header {
+        background-color: #f5f3d8;
+        color: #272222;
+        padding: 80px 20px;
+        margin: 20px auto;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(166, 161, 11, 0.621);
+        text-align: center;
+        }
+    
+        .but {
+            padding-bottom: 50px;  
+            position: relative;
+        }
+    
+    h1{
+        text-align: center;
+    }
+        .header h1 {
+        font-size: 4em;
+       margin: 0;
+        }
+        
+
+.colps {
+    overflow: hidden;
+    margin: 60px 30px 50px;
+    font-size: 25px;
+    background-color: rgb(176, 174, 17); /* Add background for items */
+    border: 0.5px solid #2c2e1b; /* Add a border around items */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(53, 19, 19, 0.1);
+    padding: 6.5px;
+    user-select: none;
+    cursor: pointer;
+    }
+
+.colps:hover {
+    background-color: #c0fed6b3;
+    }
+
+select, #day {
+    font-size: 55%;
+    cursor: pointer;
+    }
+
+details {
+    font-size: 53px;
+    text-align: center;
+    background-color: #033019cc;
+    color: #8d9612;
+    cursor: pointer;
+    }
+
+.filt {
+    font-size: 25px;
+    }
+
+.btn {
+    font-size: 20px;
+    
+}
+
+#sub {
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 80%;
+    }
+
+.itemlists {
+    display: grid ;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center align items */
+    padding: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f5f3d8;
+    min-height: 300px; /* Ensures the container grows with images */
+    }
+
+.item {
+    width: 80%;
+    height: 93%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    background-color: #ead51a31; /* Add background for items */
+    border: 3px solid #1a2a5c; /* Add a border around items */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(8, 46, 20, 0.514); /* Optional: Add shadow */
+    padding: 14px;
+    margin: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    }
+
+.item img {
+    align-self: center;
+    height: 200px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #1a2a5c;
+    max-height: 550px;
+    object-fit: cover;
+    }
+
+.item:hover {
+    transform: scale(1.05);
+    }
+
+.bar-center {
+    text-align: center;
+    }
+
+.bar-page a {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin: 30px 3px;
+    text-decoration: none;
+    color: #0b2031c1;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+.bar-page a:hover {
+    background-color: #e0ea83;
+    }
+
+#sub {
+    font-size: 33px;
+    padding-bottom: 5px 3px;
+    cursor: pointer;
+   }
+
+#sub:hover {
+    background-color: #c6ca47;
+    color: #1d1702be;
+    }
+
+.search-container {
+    padding-left: 240px;
+    margin-right: 50px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+#searchBar {
+    width: 85%;
+    border: 3px solid #1a2a5c;
+    border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+  padding: 15px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #303c1d;
+  border-radius: 5px;
+}
+
+
+.User {
+    flex: 100%; /* Make items flexible and occupy equal space */
+    max-width: 700px; /* Optional: Set max width for items */
+    text-align: center; /* Center align text inside items */
+    background-color: #7995444c; /* Add background for items */
+    border: 1px solid #012310a7; /* Add a border around items */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(8, 46, 20, 0.71); /* Optional: Add shadow */
+    padding: 16px;
+    margin: 10px 30px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+a {
+    color: black;        
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+a:hover {
+    color: #27222252;   
+    text-decoration: none; 
+}
+
+.dets {
+    display: flex; /* Arrange child elements side-by-side */
+    justify-content: space-between; /* Space evenly between sections */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 800px; /* Set a consistent height for the container */
+}
+@media only screen and (min-width: 1080px) { 
+    .search-container img {
+    display: none;
+}
+    .popupp {
+        display: none;
+    }
+    .filter-popup {
+        display: none;
+    }
+}
+
+
+.left, .right {
+    padding: 15px; /* Add some spacing */
+}
+
+.right {
+    top: 10px; /* Stick to the top of the viewport */
+    width: 30%;
+}
+
+.left {
+    width: 65%;
+    margin-left: 2%;
+}
+.sidebar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 60%; /* Width for the sidebar */
+    border: 3px solid rgba(171, 171, 25, 0.667);
+    background-color: #ead51a31;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(166, 161, 11, 0.522);
+  }
+
+.sidebarr {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 60%; /* Width for the sidebar */
+    border: 3px solid #1a2a5c;
+    background-color: #ead51a31;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(166, 161, 11, 0.522);
+  }
+
+  .sidebar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 60%; /* Width for the sidebar */
+    border: 3px solid rgba(171, 171, 25, 0.667);
+    background-color: #ead51a48;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(166, 161, 11, 0.522);
+  }
+  
+  .sidebarr legend {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3c271d;
+    text-align: center;
+    border: 3px solid #1a2a5c;
+    background-color: #ead51a31;
+  }
+  
+  .sidebarr label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .sidebarr select,
+  .sidebarr input[type="date"],
+  .sidebarr input[type="submit"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #d4262600;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #1a2a5c;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  /* Button Animation */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+}
+
+.btn:hover {
+    background-color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Item Hover Animation */
+.item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0 8px 12px rgba(8, 46, 20, 0.714); /* More intense shadow effect */
+}
+
+/* Smooth Hover Effect for Images */
+.item img {
+    transition: transform 0.3s ease; /* Smooth transition for image zoom */
+}
+
+.item img:hover {
+    transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+/* Modal Button Animation */
+.close {
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.close:hover,
+.close:focus {
+    color: darkblue; /* Dark blue when hovering */
+}
+
+/* Smooth Fade-in Animation for Modal */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Modal content slide-up animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modal content animation */
+.modal-content {
+    animation: slideUp 0.5s ease-out, fadeIn 0.5s ease-out;
+}
+
+/* Modal background animation */
+.modal {
+    animation: fadeIn 0.5s ease-out;
+}
+
+  .title {
+    font-size: 25px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .back-image {
+        padding-bottom: 0px;
+    }
+
+  .dets {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .itemlists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 10px; /* spacing between items */
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: -12px;
+  }
+
+  .item {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .search-container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  #searchBar {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .colps {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  details {
+    font-size: 10px;
+  }
+
+  .filt {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  #sub {
+    font-size: 18px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+  .left {
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  .search-container {
+    margin: 0px;
+    width: 100%;
+  }
+  #searchBar {
+    width: 70%;
+    border: 3px solid #1a2a5c;
+    border-radius: 5px;
+}
+  .fflt {
+    width: 47px;
+    float: right;
+  }
+  
+  .filter-popup,
+.popup-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.popup-backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 98;
+}
+
+.popup-content {
+  background: #f5f3d8;
+  margin: 5% auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 100;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.filter-popup.active,
+.popup-backdrop.active {
+  display: block;
+}
+
+.right {
+    display: none;
+}
+
+.sidebarr { 
+  
+    width: 95%;
+    margin-left: 0px;
+}
+}
